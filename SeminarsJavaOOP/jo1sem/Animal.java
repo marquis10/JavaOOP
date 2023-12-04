@@ -2,13 +2,13 @@ import java.time.LocalDate;
 
 public class Animal {
     private String name;
-    public String illnes;
+    private Illness illness;
     private String owerName;
     private LocalDate birthDay;
 
-    public Animal(String name, String illnes, String owerName, LocalDate birthDay) {
+    public Animal(String name, Illness illnes, String owerName, LocalDate birthDay) {
         this.name = name;
-        this.illnes = illnes;
+        this.illness = illnes;
         this.owerName = owerName;
         this.birthDay = birthDay;
     }
@@ -22,5 +22,9 @@ public class Animal {
 
     public String getName() {
         return name;
+    }
+
+    public Illness getIllness() {
+        return illness;
     }
 }
