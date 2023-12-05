@@ -27,4 +27,12 @@ public class Animal {
     public Illness getIllness() {
         return illness;
     }
+
+    public void wakeUp(){
+        System.out.println("Animal woke up");
+    }
+
+    public void wakeUp(String time){
+        System.out.println("Animal woke up in " + time);
+    }
 }
