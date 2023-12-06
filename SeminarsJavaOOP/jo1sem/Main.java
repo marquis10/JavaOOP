@@ -1,16 +1,19 @@
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Animal cat = new Animal();
+        Animal cat = new Cat();
         cat.setName("Marquis");
         System.out.println(cat.getName());
-        Animal dog = new Animal("Barbos", new Chumka("chumka"),
+        Animal dog = new Dog("Barbos", new Chumka("chumka"),
                 "petr", LocalDate.of(2009,05,24));
         System.out.println(dog.getName());
         System.out.println(dog.getIllness());
         dog.getIllness().heal();
-        dog.wakeUp();
-        dog.wakeUp("12:00");
+        ArrayList <Animal> animals = new ArrayList<>();
+        animals.add(cat);
+        animals.add(dog);
+        dog.lifeCycle();
     }
 }

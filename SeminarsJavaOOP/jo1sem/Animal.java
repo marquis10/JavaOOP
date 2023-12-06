@@ -28,11 +28,30 @@ public class Animal {
         return illness;
     }
 
-    public void wakeUp(){
+    private void wakeUp(){
         System.out.println("Animal woke up");
     }
 
-    public void wakeUp(String time){
+    private void wakeUp(String time){
         System.out.println("Animal woke up in " + time);
+    }
+
+    private void eat(){
+        System.out.println("Animal eat");
+    }
+
+    private void play(){
+        System.out.println("Animal go to play");
+    }
+
+    private void sleep(){
+        System.out.println("Animal go to bed");
+    }
+
+    public void lifeCycle(){
+        wakeUp();
+        play();
+        eat();
+        sleep();
     }
 }
