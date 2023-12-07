@@ -14,6 +14,8 @@ public class Main {
         ArrayList <Animal> animals = new ArrayList<>();
         animals.add(cat);
         animals.add(dog);
-        dog.lifeCycle();
+        cat.lifeCycle();
+        cat.breathe();
+        dog.breathe();
     }
 }

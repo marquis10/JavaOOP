@@ -29,23 +29,23 @@ public class Animal {
     }
 
     private void wakeUp(){
-        System.out.println("Animal woke up");
+        System.out.println(getClass().getSimpleName() + " woke up");
     }
 
     private void wakeUp(String time){
-        System.out.println("Animal woke up in " + time);
+        System.out.println(getClass().getSimpleName() + " woke up in " + time);
     }
 
     private void eat(){
-        System.out.println("Animal eat");
+        System.out.println(getClass().getSimpleName() + " eat");
     }
 
     private void play(){
-        System.out.println("Animal go to play");
+        System.out.println(getClass().getSimpleName() + " go to play");
     }
 
     private void sleep(){
-        System.out.println("Animal go to bed");
+        System.out.println(getClass().getSimpleName() + " go to bed");
     }
 
     public void lifeCycle(){
@@ -53,5 +53,9 @@ public class Animal {
         play();
         eat();
         sleep();
+    }
+
+    public void breathe(){
+        System.out.println("breathe");
     }
 }
