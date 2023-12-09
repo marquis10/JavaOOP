@@ -7,4 +7,9 @@ public class Dog extends Animal{
     public Dog() {
         super();
     }
+
+    @Override
+    public void fly() {
+        System.out.println(getClass().getSimpleName() + " doesn't float");;
+    }
 }

@@ -1,15 +1,15 @@
 import java.time.LocalDate;
 
-public class Cat extends Animal{
-    public Cat(String name, Illness illnes, String owerName, LocalDate birthDay) {
+public class Bird extends Animal{
+    public Bird(String name, Illness illnes, String owerName, LocalDate birthDay) {
         super(name, illnes, owerName, birthDay);
     }
-    public Cat() {
+    public Bird() {
         super();
     }
 
     @Override
-    public void fly() {
+    public void swim() {
         System.out.println(getClass().getSimpleName() + " doesn't float");;
     }
 }

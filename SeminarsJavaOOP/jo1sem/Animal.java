@@ -58,4 +58,17 @@ public class Animal {
     public void breathe(){
         System.out.println("breathe");
     }
+
+    public void toGo(){
+        System.out.println(getClass().getSimpleName() + " is running");
+    }
+
+    public void fly(){
+        System.out.println(getClass().getSimpleName() + " flies");
+    }
+
+    public void swim(){
+        System.out.println(getClass().getSimpleName() + " swims");
+    }
+
 }

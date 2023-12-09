@@ -17,5 +17,11 @@ public class Main {
         cat.lifeCycle();
         cat.breathe();
         dog.breathe();
+        dog.fly();
+        cat.swim();
+        cat.fly();
+        Animal eagle = new Bird();
+        eagle.swim();
+        eagle.fly();
     }
 }
