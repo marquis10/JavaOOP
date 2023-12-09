@@ -70,5 +70,4 @@ public class Animal {
     public void swim(){
         System.out.println(getClass().getSimpleName() + " swims");
     }
-
 }
