@@ -5,8 +5,16 @@ public class Foo {
 
     public static Integer count;
 
-    public Foo(){
+    static {
+        count = 0;
+    }
 
+    public Foo(){
+        count++;
+    }
+
+    public void printCount(){
+        System.out.println(count);
     }
 
     @Override
