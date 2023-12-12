@@ -1,7 +1,16 @@
 package JavaOOP.lection2.Ex000;
 
 public class Program {
+
+    //static void A(){
+    void A(){
+        System.out.println("A()");
+    }
     public static void main(String[] args) {
+
+        Program prog = new Program();
+        prog.A();
+
         Foo f1 = new Foo();
         f1.value = 123;
 //        System.out.println(f1.value);
