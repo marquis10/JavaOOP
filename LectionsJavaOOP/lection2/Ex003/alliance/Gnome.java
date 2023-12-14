@@ -1,6 +1,6 @@
 package JavaOOP.lection2.Ex003.alliance;
 
-import Lesson_08.Ex003.*;
+import JavaOOP.lection2.Ex003.*;
 
 public class Gnome extends Priest{
     
