@@ -1,4 +1,4 @@
-package JavaOOP.lection2.Ex002;
+package JavaOOP.lection2.Ex003;
 
 import java.util.Random;
 
@@ -39,8 +39,6 @@ public abstract class BaseHero {
         if (this.hp - damage > 0) {
             this.hp -= damage;
         }
-        else { die(); }
+        // else { die(); }
     }
-
-    public abstract void die();
 }

@@ -1,4 +1,4 @@
-package JavaOOP.lection2.Ex002;
+package JavaOOP.lection2.Ex003;
 
 public class Druid extends BaseHero {
     private int harmony;
@@ -13,11 +13,6 @@ public class Druid extends BaseHero {
 
     public String getInfo() {
         return String.format("%s  Harmony: %d", super.getInfo(), this.harmony);
-    }
-
-    @Override
-    public void die() {
-
     }
 
     public void healing(BaseHero target) {
